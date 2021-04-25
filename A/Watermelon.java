@@ -15,5 +15,20 @@ Print YES, if the boys can divide the watermelon into two parts, each of them we
 
 Java Solution:
 
+import java.util.*;
 
+public class Watermelon {
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        int w = sc.nextInt();
+        String out = (isEven(w)) ? "YES" : "NO";
+        System.out.print(out);
+    }
+    public static boolean isEven(int w){
+        if(w%2==0 && w>2)
+            return true;
+        else
+            return false;
+    }
+}
 
